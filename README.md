@@ -1,6 +1,5 @@
 # UrbanTreeCanopy
-
-'~'*WIP*'~'
+*WIP WIP WIP*
 
 
 ### Project Objective
