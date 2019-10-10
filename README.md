@@ -1,8 +1,7 @@
-# UrbanTreeCanopy
-*WIP WIP WIP*
+## URBAN TREE CANOPY IDENTIFICATION
+*WIP WIP WIP WIP WIP WIP*
 
-
-### Project Objective
+#### PROJECT OBJECTIVE
 
 Rapid assessment methods for mapping green infrastructure in cities
 
@@ -12,20 +11,18 @@ WRI proposes to work in collaboration with Nat Geo to develop a globally-transfe
 
 By end of 2019, we aim to have prototype methods producing reasonable results for both outputs using both NAIP and Airbus imagery inputs, and predictions for use in local engagements for at least 1 city in US and 1 city outside US, as selected by the WRI/NatGeo project teams.
 
-### Proposed outputs and methods
+#### METHODOLOGY
+
+- Acquisition of high resolution satellite imagery - NAIP, SPOT, Pleiades. (*UTC_Core-1*)
+- Acquisition of LiDAR point cloud data and conversion to digital surface model tif. (*UTC_Core-1*)
+- Creation of NDVI and elevation masks from the imagery and DSM, respectively. The intersection of these masks produces a 'composite mask' which is used as training inputs for the Convolutional Neural Network. The composite masks can be produced as binary, classified, or semi-continuous. (*UTC_Core-2*)
+- Fully Convolutional Network for sematic segmentation (*UTC_Core-3*)
+
+#### PROPOSED OUTPUTS
 
 - Produce binary raster maps of vegetated cover and trees (two datasets) for urban areas anywhere on Earth and whenever imagery is available
 - Working from high-resolution (~0.5-1.5m) RGBN imagery – NAIP (US, free), Airbus SPOT or Pleiades (global, commercial but available to NatGeo/WRI for analysis for at least 2019)
 - Lower resolution (10m) alternative for vegetated cover: Sentinel (but resolution too coarse for tree/street-level assessment or siting applications)
 - Output: Vegetated cover – Method: NDVI with threshold and seasonally adjusted
 - Output: Tree canopy – Method: machine learning model trained on RGBN-based NDVI and LIDAR-based height data, applicable for predictions to RGBN-only imagery
-
-### Methodology
-
-- Acquisition of high resolution satellite imagery - NAIP, SPOT, Pleiades. (*UTC_Core-1*)
-- Acquisition of LiDAR point cloud data and conversion to digital surface model tif. (*UTC_Core-1*)
-- Creation of NDVI and elevation masks from the imagery and DSM, respectively. The intersection of these masks produces a 'composite mask' which is used as training inputs for the Convolutional Neural Network. The composite masks can be produced as binary, classified, or semi-continuous. (*UTC_Core-2*)
-- 
-
-
 
