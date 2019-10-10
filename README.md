@@ -1,5 +1,8 @@
 # UrbanTreeCanopy
 
+
+### Project Objective
+
 Rapid assessment methods for mapping green infrastructure in cities
 
 Trees and other vegetation in urban areas provide a variety of benefits to people and ecosystems, notably water quality, flood management, heat mitigation, air quality, biodiversity and carbon sequestration.  The specific features of vegetation and their contexts influence the level of benefits that they can provide. Factors include the location (proximity to water, impermeable surfaces, pollution, other vegetation, etc.) and kinds of vegetation (height, species, etc.).   
@@ -8,8 +11,7 @@ WRI proposes to work in collaboration with Nat Geo to develop a globally-transfe
 
 By end of 2019, we aim to have prototype methods producing reasonable results for both outputs using both NAIP and Airbus imagery inputs, and predictions for use in local engagements for at least 1 city in US and 1 city outside US, as selected by the WRI/NatGeo project teams.
 
-
-Proposed outputs and methods:
+### Proposed outputs and methods
 
 - Produce binary raster maps of vegetated cover and trees (two datasets) for urban areas anywhere on Earth and whenever imagery is available
 - Working from high-resolution (~0.5-1.5m) RGBN imagery – NAIP (US, free), Airbus SPOT or Pleiades (global, commercial but available to NatGeo/WRI for analysis for at least 2019)
@@ -17,4 +19,8 @@ Proposed outputs and methods:
 - Output: Vegetated cover – Method: NDVI with threshold and seasonally adjusted
 - Output: Tree canopy – Method: machine learning model trained on RGBN-based NDVI and LIDAR-based height data, applicable for predictions to RGBN-only imagery
 
- 
+### Methodology
+
+- Acquisition of high resolution satellite imagery - NAIP, SPOT, Pleiades (Bands: R, G, B, NIR) *Notebook: Core 1*
+- Acquisition of LiDAR point cloud data and conversion to digital surface tif *Notebook: Core 1*
+
