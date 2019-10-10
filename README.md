@@ -1,5 +1,7 @@
 # UrbanTreeCanopy
 
+* ~WIP~ *
+
 
 ### Project Objective
 
@@ -24,4 +26,7 @@ By end of 2019, we aim to have prototype methods producing reasonable results fo
 - Acquisition of high resolution satellite imagery - NAIP, SPOT, Pleiades. (*UTC_Core-1*)
 - Acquisition of LiDAR point cloud data and conversion to digital surface model tif. (*UTC_Core-1*)
 - Creation of NDVI and elevation masks from the imagery and DSM, respectively. The intersection of these masks produces a 'composite mask' which is used as training inputs for the Convolutional Neural Network. The composite masks can be produced as binary, classified, or semi-continuous. (*UTC_Core-2*)
+- 
+
+
 
